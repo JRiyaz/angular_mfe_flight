@@ -2,11 +2,11 @@ const { shareAll, withModuleFederationPlugin } = require('@angular-architects/mo
 
 module.exports = withModuleFederationPlugin({
 
-  name: 'mfe1',
+  name: 'flight',
 
   exposes: {
     // './Component': './projects/flight/src/app/app.component.ts',
-    './Module': './projects/flight/src/app/home/home.module.ts',
+    './Home': './projects/flight/ui/src/app/home/home.module.ts',
   },
 
   shared: {
